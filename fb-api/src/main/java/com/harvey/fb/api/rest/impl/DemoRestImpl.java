@@ -17,9 +17,9 @@ public class DemoRestImpl extends BaseRestImpl implements DemoRest {
 	private BasUsersService basUsersService;
 	@Override
 	public MessageEntity test() {
-		BasUsersModel model = new BasUsersModel();
-		model.setUserName("hhhhhhhhhhhhhhhhhh");
-		basUsersService.save(model);
+//		BasUsersModel model = new BasUsersModel();
+//		model.setUserName("hhhhhhhhhhhhhhhhhh");
+//		basUsersService.save(model);
 		return MessageEntity.getReturn(true, "justTest", basUsersService.query());
 	}
 

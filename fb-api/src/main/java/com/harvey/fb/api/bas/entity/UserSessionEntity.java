@@ -19,7 +19,6 @@ public class UserSessionEntity extends BasUsersModel implements UserBaseModel {
     private String userLevel;
     private List<? extends GrantedAuthority> authorities;
     
-    private String isValidatedSensitivePassword;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -69,12 +68,5 @@ public class UserSessionEntity extends BasUsersModel implements UserBaseModel {
         this.userLevel = userLevel;
     }
 
-	public String getIsValidatedSensitivePassword() {
-		return isValidatedSensitivePassword;
-	}
-
-	public void setIsValidatedSensitivePassword(String isValidatedSensitivePassword) {
-		this.isValidatedSensitivePassword = isValidatedSensitivePassword;
-	}
 
 }
