@@ -1,21 +1,10 @@
 package com.harvey.fb.api.common.entity;
 
 
-
-
-
 public class MessageEntity {
-	/**
-	 * 是否失败
-	 */
+
 	private Boolean error;
-	/**
-	 * 返回信息
-	 */
 	private String message;
-	/**
-	 * 返回对象
-	 */
 	private Object result; 
 	
 	
@@ -31,20 +20,24 @@ public class MessageEntity {
 	public Boolean getError() {
 		return error;
 	}
-	public void setError(Boolean error) {
+	public MessageEntity setError(Boolean error) {
 		this.error = error;
+		return this;
 	}
 	public String getMessage() {
 		return message;
 	}
-	public void setMessage(String message) {
+	public MessageEntity setMessage(String message) {
 		this.message = message;
+		return this;
+		
 	}
 	public Object getResult() {
 		return result;
 	}
-	public void setResult(Object result) {
+	public MessageEntity setResult(Object result) {
 		this.result = result;
+		return this;
 	}
 	
 	public static MessageEntity getReturn(Boolean error,String message,Object obj) {
@@ -54,10 +47,11 @@ public class MessageEntity {
 		result.setResult(obj);
 		return result;
 	} 
-	public void setReturn(Boolean error,String message,Object result){
+	public MessageEntity setReturn(Boolean error,String message,Object result){
 		this.result=result;
 		this.error=error;
 		this.message=message;
+		return this;
 	}
 }
 
