@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>fb-api</module>
+  	<module>fb-web</module>
   </modules>
 </project>
